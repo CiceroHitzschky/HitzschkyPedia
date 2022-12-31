@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação HTML Web Developer </title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <picture class="logo">
+      <img src="assets/images/logo.gif" width="200"/>
+    </picture> 
+  </header>
+
+    <div class="bar"></div>
+
+    <div class="content">
+      <div class="sidebar">
+        <h2> Módulos do Curso </h2>
+          <ul>
+            <li><a href="html_client_server.html">Client x Server </a></li>
+            <li><a href="html_introducao_html.html">Introdução ao HTML na Prática </a></li>
+            <li><a href="html_lab_Project.html">Lab Project: Criando sua Primeira Página </a></li>
+            <li><a href="index.html">Voltar ao Menu </a></li>
+          </ul>
+      </div>
+      
+      <!-- Principal -->
+      <main>
+        <h1 id="inicio">Entendendo a Comunicação Client x Server </h1><hr><hr>
+          <article>
+            <h2 id="historia da web">História da Web </h2><hr>
+              <p>
+                    Ao falarmos da história da web é totalmente aceitável que falemos primeiramente da história dos computadores. Afinal, esses são fundamentais
+                    para que a web, como conhecemos hoje, fosse possível. Os primeiros computadores, diferentemente da nossa visão atual, eram máquinas gigantescas
+                    que tinham como objetivo principal cálculos matemáticos usados para guerras tais como criptografia. Um dos primeiros computadores foi o Havard Mark I.
+              </p>
+              <figure>
+                <img width="400"  src="https://www.ibm.com/ibm/history/exhibits/markI/images/overlay/coi53.jpg"/>
+                <figcaption>Havard Mark I</figcaption>
+              </figure>
+              <p>
+                Harvard Mark I, ou Automatic Sequence Controlled Calculator (ASCC, em português "Calculadora Automática de Sequência Controlada"), 
+                chamado popularmente de Mark I, foi a primeira calculadora eletro-mecânica automática produzida em larga escala desenvolvido nos Estados Unidos,
+                projetada em 1930 pelo estudante pós-graduando em física Howard Aiken, na Universidade Harvard e, construído em 1944, em uma parceria com a empresa IBM, 
+                durante a Segunda Guerra Mundial. Pesando cerca de 5 toneladas foi a primeira calculadora automática produzida em larga escala, desenvolvido nos Estados Unidos.
+              </p>
+            
+              <h3 id="origens do mark">Origens do Mark I</h3>
+                <p>
+                    Howard Aiken tinha começado a procurar uma empresa para projetar e construir sua calculadora no início de 1937. 
+                    Depois de duas rejeições, ele foi mostrado um conjunto demonstração de que o filho de Charles Babbage  tinha dado à Universidade de Harvard 70 anos antes. 
+                    Isso o levou a estudar Babbage e adicionar referências da máquina analítica à sua proposta; a máquina resultante "trouxe princípios da máquina analítica de Babbage quase a plena realização, 
+                    enquanto a adição de novas funcionalidades importantes". O conceito original foi apresentado à IBM por Howard Aiken em novembro de 1937. 
+                </p>
+                <p>
+                    Depois de um estudo de viabilidade por engenheiros da IBM, 
+                    o presidente da companhia, Thomas Watson, aprovou o projeto e seu financiamento em fevereiro de 1939. 
+                    O Mark I foi desenvolvido e construído pela IBM em seu Endicott e, posteriormente enviado para Harvard em fevereiro de 1944. 
+                    Iniciou com cálculos para os EUA Navy Bureau of Ships em maio e foi apresentado oficialmente à universidade em 24 de agosto de 1944.
+                </p>
+              
+              <h3 id="projeto mark">Projeto e Construção do Mark I</h3><small><a href="#inicio">(Voltar)</a> </small>
+                <p>
+                    O ASCC foi construído a partir de interruptores, relés, eixos rotativos e embreagens. Utilizou 765 mil componentes eletromecânicos e centenas de quilômetros de fio, 
+                    compreendendo um volume de 816 pés cúbicos (23 m3) - 51 pés (16 m) de comprimento, 8 pés (2,4 m) de altura e 2 pés (0,61 m) de profundidade . 
+                    Pesava cerca de 10 000 libras (4 500 kg). As unidades de cálculo básicas tiveram de ser sincronizadas e alimentadas mecanicamente,
+                        de modo que foram operadas por um eixo de transmissão de 50 pés (15 m) acoplado a um motor elétrico de 5 cavalos de potência (3,7 kW), 
+                        que servia de fonte de energia principal e relógio do sistema. Dos arquivos da IBM:
+                </p>
+                <blockquote>
+                    A Calculadora Automática de Seqüência Controlada (Harvard Mark I) foi a primeira máquina operacional que poderia executar cálculos longos automaticamente. 
+                    Um projeto concebido pelo Dr. Howard Aiken da Universidade Harvard, o Mark I foi construído por engenheiros da IBM em Endicott, NY. 
+                    Um quadro de aço de 51 pés de comprimento e 8 pés de altura mantinha a calculadora, que consistia em um painel de engrenagens de engrenagens pequenas, 
+                    contadores, interruptores e circuitos de controle, todos com apenas alguns centímetros de profundidade. 
+                    O ASCC usou 500 milhas de fio com três milhões de conexões, 3 500 relés multipontos com 35 000 contatos, 2 225 contadores, 
+                    1 464 interruptores de tenda e níveis de 72 máquinas de adição, cada um com 23 números significativos. 
+                    Era a maior calculadora eletromecânica da indústria.
+                </blockquote>
+                <p>
+                    O gabinete para o Mark I foi projetado pelo futurista designer industrial norte-americano Norman Bel Geddes. 
+                    Aiken considerou o invólucro elaborado como um desperdício de recursos, uma vez que o poder de computação estava em alta demanda durante a guerra e os fundos 
+                    (aproximadamente US$ 50 000 conforme Grace Hopper) poderiam ter sido usados ​​para construir equipamentos informáticos adicionais.
+                </p>
+
+              <h3 id="Colossus e ENIAC">Colossus e ENIAC</h3>
+              <small><a href="#inicio">(Voltar)</a> </small>
+                <p>
+                    Colossus foi um conjunto de computadores desenvolvidos por decifradores britânicos nos anos de 1943 a 1945 para ajudar na criptoanálise da cifra de Lorenz. 
+                    A Colossus usava válvulas termiônicas (tubos a vácuo) para realizar operações booleanas e de contagem. 
+                    Colossus é, portanto, considerado o primeiro computador digital programável, eletrônico, embora tenha sido programado por interruptores e plugues e não por um programa armazenado.
+                    O Colossus foi projetado pelo o engenheiro de pesquisa de telefone da General Post Office (GPO) Tommy Flowers para resolver um problema apresentado pelo matemático Max Newman na Escola de Código do Governo e Cypher (GC&CS) em Bletchley Park.
+                    O uso de probabilidade de Alan Turing na criptoanálise (ver Banburismus) contribuiu para seu projeto. Algumas vezes foi erroneamente declarado que Turing projetou o Colossus para ajudar na criptoanálise da máquina Enigma.
+                </p>
+                <p>
+                    A máquina de Turing que ajudou a decodificar o Enigma foi a Bomba Eletromecânica, não a Colossus.
+                    O protótipo, Colossus Mark 1, foi mostrado para funcionar em dezembro de 1943 e estava em uso em Bletchley Park no início de 1944. 
+                    Já o Colossus Mark 2 aprimorado, que usava registradores de deslocamento para quintuplicar a velocidade de processamento, trabalhou pela primeira vez em 1 de junho de 1944, bem a tempo para os desembarques na Normandia no Dia D.[6] Dez Colossi estavam em uso até o final da guerra e um décimo primeiro estava sendo comissionado.[6] O uso dessas máquinas em Bletchley Park permitiu aos Aliados obter uma vasta quantidade de inteligência militar de alto nível a partir de mensagens de radiotelegrafia interceptadas entre o Alto Comando Alemão (OKW) e seus comandos do exército em toda a Europa ocupada.
+                    A existência das máquinas Colossus foi mantida em segredo até meados da década de 1970.
+                    Todas as máquinas, exceto duas, foram desmontadas em peças tão pequenas que não foi possível inferir seu uso. 
+                    As duas máquinas retidas foram eventualmente desmontadas na década de 1960. A reconstrução funcional de um Mark 2 Colossus foi concluída em 2008 por Tony Sale e uma equipe de voluntários; 
+                    Hoje em dia, está em exibição no Museu Nacional de Computação em Bletchley Park.
+                </p>
+
+                <figure title="Imagem do Computador Colossu" alt="Imagem de uma mulher operando o computador colossu">
+                    <img width="400" src="https://cdn.britannica.com/15/25015-050-180E683B/computer-Colossus-Bletchley-Park-Buckinghamshire-England-Funding-1943.jpg"/>
+                    <figcaption>Imagem de uma mulher operando o computador Colossus</figcaption>
+                </figure>
+
+                <p>
+                  Electronic Numerical Integrator and Computer (ENIAC - em português: computador integrador numérico eletrônico) foi o primeiro computador digital eletrônico de grande escala. 
+                  Muitos comentam que o primeiro foi o Mark I, mas este era apenas eletromecânico. 
+                  O ENIAC entrou em funcionamento em fevereiro de 1946 pelas mãos dos cientistas norte-americanos John Eckert e John Mauchly, da Electronic Control Company.
+                  O ENIAC começou a ser desenvolvido em 1943 durante a II Guerra Mundial para computar trajetórias táticas que exigiam conhecimento substancial em matemática com mais agilidade, 
+                  mas só se tornou operacional após o final da guerra.
+                </p>
+                <ul>
+                  <li> Sua capacidade de processamento era de 5 000 operações por segundo;</li>
+                  <li> Criado na segunda guerra, tinha como principal finalidade cálculos balísticos;</li>
+                  <li>Possuía 17 468 válvulas termiônicas, de 160 kW de potência.</li>
+                  <li>O "sistema operacional" da máquina era através de cartões perfurados.</li>
+                </ul>
+                <p>
+                  A calculadora efetua os cálculos a partir das teclas pressionadas, fazendo interação direta com o hardware, como no ENIAC, no qual era preciso conectar fios, relês e sequências de chaves para que se determinasse a tarefa a ser executada.
+                  A cada tarefa diferente o processo deveria ser refeito. A resposta era dada por uma sequência de lâmpadas.
+                </p>
+                <figure>
+                  <img width="300" height="200" src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/26776_1798DEE935286D54.jpg?w=876&h=484&crop=1"/>                
+                  <figcaption>ENIAC sendo operado</figcaption>
+                </figure>
+              
+              <h3 id="ger 2">Segunda Geração de Computadores</h3>
+              <small><a href="#inicio">(Voltar)</a> </small>
+                <p>
+                    Tudo que foi falado acima ficou conhecido como a primeira geração de computadores. 
+                    A segunda geração de computadores (1959-1964) foi caracterizada pela criação dos transístores, que vieram a substituir as válvulas eletrônicas. 
+                    Esses componentes, além de serem menores, eram mais eficientes e mais baratos.
+                    O computador passou por diversas transformações e foi se aperfeiçoando ao longo do tempo, acompanhando o avanço das áreas da matemática, engenharia, eletrônica. 
+                    É por isso que não existe somente um inventor.
+                    Foram nos anos Pós-Segunda Guerra Mundial, que com a incorporação das novas tecnologias então desenvolvidas, o projeto computador se tornou realidade. 
+                    De acordo com os sistemas e ferramentas utilizados, a história da computação está dividida em Cinco gerações de computadores.
+                </p>    
+                <figure>
+                  <img width="300" height="200" src="https://static.javatpoint.com/computer/images/second-generation-of-computer2.jpg"/>  
+                  <figcaption>Homem Operando um computador de Segunda Geração</figcaption>
+                </figure>
+                <p>                    
+                  O marco da segunda geração (1955-1964) foi a substituição das válvulas para o transistores, revolucionou a eletrônica em geral, assim com os computadores trazendo consigo vantagens como a diminuição de peso, 
+                  um computador que antes pesava cerca de 30 toneladas, no caso do ENIAC, passou a pesar cerca de apenas 1 tonelada ou menos, a proporção dos transistores é muito menor em relação as válvulas, 
+                  tornando assim também o tamanho dos computadores menores, os transistores não exigiam um tempo de pré-aquecimento como as válvulas, o custo mais barato, consumiam menos energia, a geração de calor era bem menor.
+                  A programação desse tipo de máquina era feita diretamente em sua linguagem, conhecida como Assembly, essa linguagem era feita através da perfuração de cartões, 
+                  esse processo de perfuração demandava uma grande quantidade de tempo, o armazenamento era feito por meio de fitas magnéticas.   
+                </p>
+                
+                <figure>
+                  <img width="300" height="200" src="http://generalnote.com/Computer-Fundamental/Generation-of-Computer/Second-Generation-of-Computer.jpg"/>
+                  <img width="300" height="200" src="http://joannaorlanda.weebly.com/uploads/3/9/8/6/39868131/7185210_orig.jpg"/>
+                  <figcaption>Imagens de Computadores da Segunda Geração</figcaption>
+                </figure>
+              
+              <!-- Terceira Geração  -->
+              <h3 id="ger 3">Terceira Geração de Computadores</h3>
+              <small><a href="#inicio">(Voltar)</a> </small>
+                <p>
+                  A terceira geração de computadores, com início em 1965, teve como evolução primordial a implementação de circuitos integrados. 
+                  O lançamento do primeiro Microprocessador, em 1971, marca o término desta geração e começo da próxima.
+                  Na década de 50, Geoffrey W. A. Dummer desenvolveu a ideia inicial de um Circuito integrado (CI). 
+                  Dummer deu várias palestras para a propagação de sua ideia e, em 1958, Robert Noyce, Jean Hoerni, Jack Kilby e Kurt Lehovec iniciaram o desenvolvimento de circuitos integrados. 
+                  Esperava-se que tal tecnologia tornasse os computadores até ali obsoletos.      
+                </p>
+                <p>
+                  O uso de transistores passou a ser substituído pelo de circuitos integrados, unidades de encapsulamento semicondutoras que agrupam transistores, resistores, 
+                  diodos e outros componentes elétricos interligados em uma pastilha de Silício e Germânio, que passaram a ser conhecidos como chips.
+                  As duas variedades de circuitos integrados da geração eram o SSI (Small-scale integration – Circuitos de pequena escala) com cerca de 10 
+                  transistores por chip e os MSI (Medium-scale integration - Circuitos de média escala) com cerca de 100 transistores por chip.
+                </p>
+                <p>
+                  Essa compactação nos componentes possibilitou a diminuição do tamanho dos computadores (mas o menor deles ainda pesava mais de 20 kg), do aquecimento e do consumo de energia.
+                  Por outro lado, a proximidade dos circuitos possibilitou um aumento na velocidade de processamento dos computadores, chegando à velocidade de 1.000.000 de operações por segundo (nanossegundos), 
+                  e no número de operações simultâneas (pois os diferentes circuitos do chip poderiam se comunicar com hardwares distintos ao mesmo tempo),além de um aumento na confiabilidade da máquina.
+                  Além de tudo isso, agora era possível aumentar a capacidade de um computador de acordo com a necessidade.
+                </p>
+                <p>
+                  Os custo de produção de um computador começavam a cair, atingindo uma faixa de mercado que abrangia empresas de médio porte, centros de pesquisa e universidades menores, 
+                  fazendo com que os computadores não fossem mais exclusivos para uso militar e científico.O uso domiciliar ainda não era comum pois sua aquisição era difícil devido a 
+                  eles ainda serem grandes, robustos e necessitarem de muita energia para seu resfriamento do sistema digestivo.                  
+                </p>
+                
+                <figure>
+                  <img width="250" height="200" src="https://www.tutorialspoint.com/computer_fundamentals/images/third_generation.jpg"/>
+                  <img width="250" height="200" src="http://generalnote.com/Computer-Fundamental/Generation-of-Computer/Third-Generation-of-Computer.jpg"/>
+                  <img width="200" height="200" src="http://dilshodzaripov.weebly.com/uploads/9/6/1/0/9610277/1754830_orig.gif"/>  
+                  <figcaption>Imagens de Computadores de Terceira Geração
+                    
+                  </figcaption>
+                </figure>
+                
+              
+              <h3 id="ger 4">Quarta Geração de Computadores</h3>
+              <small><a href="#inicio">(Voltar)</a> </small>                
+                <p>
+                    Enfim, a quarta geração que é a que nós estamos vivendo agora está relacionada à circuitos cada vez menores e mais potêntes.
+                </p>
+                <img width="300" height="200" src="http://www.guyhowto.com/wp-content/uploads/2021/01/15_4-Fourth-Generation-of-C.jpg"/>
+                <img width="300" height="200" src="https://i0.wp.com/ricardohage.com.br/wp-content/uploads/2017/04/computadores_0006_desktop.jpg?resize=800%2C445"/>
+                <img width="300" height="200" src="https://img.freepik.com/fotos-gratis/mulher-de-negocio-que-trabalha-no-laptop_1388-67.jpg?w=2000"/>
+
+                <p>
+                    A comunicação foi melhorando conforme o passar do tempo. Em 1958 por exemplo, foi passado um cabo de um continente para outro possibilitando a comunicação direta entre eles.
+                    Obviamente, devido às guerras a forma de comunicação foram ficando cada vez mais eficazes para que se pudesse ter vantagem. 
+                    Além disso, como formas de comunicação da época temos o telégrafo e o código Morse. 
+                </p>
+                <p>
+                    A primeira palavra a trafegar pela internet foi a palavra 'LO'. A comunicação 
+                    entre duas universidades foi feita e foi enviada a palavra 'LOGIN' de uma para a outra, mas a outra apenas recebeu 'LO'. 
+                    Ou seja, a primeira conexão à internet e a primeira queda ocorram no mesmo dia.  
+                    Para aprimorar isso foi criado o TCP/IP deixando as conexões mais estáveis e logo após foi criada a World Wide Web com intuito de não remediar problemas
+                    de diversificação demasiada de redes.
+                </p>
+                <ol>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Grace_Hopper"> Grace Murray Hopper </a> trabalhou na Marinha - Criou COBOL e o termo 'BUG'.
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Joseph_Carl_Robnett_Licklider" > Joseph Carl Robnett Licklider </a> - teorizou a idéia de Cloud.
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Robert_Kahn" > Robert E. Kahn </a> - criou TCP/IP e primeiro email.
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee" > Tim Berners-Lee </a> -  considerado o pai da internet, criou o WWW, popularizou HTTP e HTML.
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Marc_Andreessen" > Marc Andreessen </a> - Reinventou os navegadores.
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Bill_Gates" > Bill Gates </a> - Fundador da Microsoft, criou o Internet Explorer.
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Steve_Jobs" > Steve Jobs </a> - Fundador da Apple, popularizou o smartphone.
+                    </li>
+                </ol>
+
+            </article>
+        </main>
+
+        <nav class="anchors">
+            <h2>Seções deste Módulo </h2>
+            <ul>
+                <li><a href="#historia da web">História da Web</a></li>
+                <ul>
+                  <li><a href="#origens do mark">Origens do Mark I</a></li>
+                  <li><a href="#projeto mark">Projeto e Construção do Mark I</a></li>
+                  <li><a href="#Colossus e ENIAC">Colossus e ENIAC</a></li>  
+                </ul>
+            </ul>
+        </nav>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

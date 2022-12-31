@@ -1,0 +1,282 @@
+<html>
+    <head>
+        <title>
+            Resumo -  Primeiros Passos com HTML
+        </title>
+    </head>
+    <body>
+        <h1>
+            RESUMO DO CURSO
+        </h1>
+        <hr/>
+        <h2 id="inicio">Sumário: </h2>
+            <ul>
+                <li><a href="#intro">Introdução</a></li>
+                <li> <a href="#client_server"> Entendendo Comunicação ClientxServer </a></li>
+                <li> <a href="#html"> Introdução ao HTML na Prática </a></li>
+                <li> <a href="#git"> Como Entregar seu Desafio de Projeto </a></li>
+                <li> <a href="#desafio"> Uma Página Web Utilizando as Tags Aprendidas </a> </li>
+                <li> <a href="#materiais"> Materiais Complementares </a></li>
+            </ul>
+
+        <h1 id="intro"> Introdução</h1>
+            <p>
+                Este arquivo serve como um resumo do curso <u><i>PRIMEIROS PASSOS COM HTML</i></u> da formação <strong><i>HTML DEVELOPER</i></strong>. 
+                É um curso introdutório, então tudo que será tratado aqui é no nível bem básico e didático. O sumário é feito de hyperlinks para que haja
+                uma pesquisa mais rápida e eficaz dentre o documento e cada seção representa a divisão de subcursos abordados no primeiro curso da formação.
+            </p>
+        
+
+        <h1 id="client_server"> Entendendo Comunicação Client x Server</h1>
+            <small><a href="#inicio">(Voltar ao sumário)</a></small>
+            <p>
+                O curso Entendendo Comunicação ClientxServer é dividido em quatro etapas que servem para introduzir o aluno no mundo tecnológico.
+                É suposto aqui que o estudante não saiba muito sobre tecnologia. 
+
+            </p>        
+            <h2>Etapa 1: História da Web </h2>
+                <p>
+                    Ao falarmos da história da web é totalmente aceitável que falemos primeiramente da história dos computadores. Afinal, esses são fundamentais
+                    para que a web, como conhecemos hoje, fosse possível. Os primeiros computadores, diferentemente da nossa visão atual, eram máquinas gigantescas
+                    que tinham como objetivo principal cálculos matemáticos usados para guerras tais como criptografia. Os primeiros computadores que existiram foram 
+                    o Havard Mark I, Colossus e ENIAC no ano de 1946. A seguir temos três imagens, respectivas, deles.
+                </p>
+                
+                <img width="300" height="200" src="https://www.ibm.com/ibm/history/exhibits/markI/images/overlay/coi53.jpg"/>
+                <img width="300" height="200" src="https://cdn.britannica.com/15/25015-050-180E683B/computer-Colossus-Bletchley-Park-Buckinghamshire-England-Funding-1943.jpg"/>
+                <img width="300" height="200" src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/26776_1798DEE935286D54.jpg?w=876&h=484&crop=1"/>                
+
+                <p>
+                    Assim, essa ficou  sendo a primeira geração de computadores. Computadores gigantescos feitos à base de bobinas e valvulas.
+                    A segunda geração foi quando trocaram as válvulas por transistores. Isso permitia deixar o computador mais 'portátil'. Para aquela época
+                    entenda como portátil conseguir transferir de uma sala para a outra. Como mostra a imagem abaixo    
+                </p>    
+                <img width="300" height="200" src="http://generalnote.com/Computer-Fundamental/Generation-of-Computer/Second-Generation-of-Computer.jpg"/>
+                <img width="300" height="200" src="http://joannaorlanda.weebly.com/uploads/3/9/8/6/39868131/7185210_orig.jpg"/>
+                <img width="300" height="200" src="https://static.javatpoint.com/computer/images/second-generation-of-computer2.jpg"/>
+
+                <p>
+                    A terceira geração foi permitida mediante a criação dos circuitos integrados que permitiu deixar os computadores ainda menores. A partir dessa tecnologia
+                    que foi possível ter os famosos PC's (Personal Computers) ou computadores pessoais.      
+                </p>
+                <img width="300" height="200" src="https://www.tutorialspoint.com/computer_fundamentals/images/third_generation.jpg"/>
+                <img width="300" height="200" src="http://generalnote.com/Computer-Fundamental/Generation-of-Computer/Third-Generation-of-Computer.jpg"/>
+                <img width="300" height="200" src="http://dilshodzaripov.weebly.com/uploads/9/6/1/0/9610277/1754830_orig.gif"/>
+                
+                <p>
+                    Enfim, a quarta geração que é a que nós estamos vivendo agora está relacionada à circuitos cada vez menores e mais potêntes.
+                </p>
+                <img width="300" height="200" src="http://www.guyhowto.com/wp-content/uploads/2021/01/15_4-Fourth-Generation-of-C.jpg"/>
+                <img width="300" height="200" src="https://i0.wp.com/ricardohage.com.br/wp-content/uploads/2017/04/computadores_0006_desktop.jpg?resize=800%2C445"/>
+                <img width="300" height="200" src="https://img.freepik.com/fotos-gratis/mulher-de-negocio-que-trabalha-no-laptop_1388-67.jpg?w=2000"/>
+
+                <p>
+                    A comunicação foi melhorando conforme o passar do tempo. Em 1958 por exemplo, foi passado um cabo de um continente para outro possibilitando a comunicação direta entre eles.
+                    Obviamente, devido às guerras a forma de comunicação foram ficando cada vez mais eficazes para que se pudesse ter vantagem. 
+                    Além disso, como formas de comunicação da época temos o telégrafo e o código Morse. 
+                </p>
+                <p>
+                    A primeira palavra a trafegar pela internet foi a palavra 'LO'. A comunicação 
+                    entre duas universidades foi feita e foi enviada a palavra 'LOGIN' de uma para a outra, mas a outra apenas recebeu 'LO'. 
+                    Ou seja, a primeira conexão à internet e a primeira queda ocorram no mesmo dia.  
+                    Para aprimorar isso foi criado o TCP/IP deixando as conexões mais estáveis e logo após foi criada a World Wide Web com intuito de não remediar problemas
+                    de diversificação demasiada de redes.
+                </p>
+                <ol>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Grace_Hopper"> Grace Murray Hopper </a> trabalhou na Marinha - Criou COBOL e o termo 'BUG'.
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Joseph_Carl_Robnett_Licklider" > Joseph Carl Robnett Licklider </a> - teorizou a idéia de Cloud.
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Robert_Kahn" > Robert E. Kahn </a> - criou TCP/IP e primeiro email.
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee" > Tim Berners-Lee </a> -  considerado o pai da internet, criou o WWW, popularizou HTTP e HTML.
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Marc_Andreessen" > Marc Andreessen </a> - Reinventou os navegadores.
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Bill_Gates" > Bill Gates </a> - Fundador da Microsoft, criou o Internet Explorer.
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pt.wikipedia.org/wiki/Steve_Jobs" > Steve Jobs </a> - Fundador da Apple, popularizou o smartphone.
+                    </li>
+                </ol>
+            <h2> Etapa 2: O que são Clients</h2>
+                <p>
+                    Client é quem consume algo da internet. No momento que estamos utilizando a internet para obter alguma informação somos Clients. Para nos auxiliar nessa
+                    missão de obter dados da internet existem os navegadores que servem para interpretar os programas no qual recebemos as informações. Quando solicitamos
+                    alguma informação da Web sua resposta vem em HTML, CSS e JavaScript geralemente. O navegador traduz essas informações para que possamos ler o que desejamos.
+                </p>
+                <p>
+                    Os Clients buscam informações de diferentes dispositivos. Quando se busca informação através de um navegaor ou  'Browser' estamos acessando uma Aplicação Web.
+                    Ou seja, aplicação web é tudo aquilo que não precisa ser instalado no dispositivo Client. Diferentemente dos aplicativos de celular, por exemplo, que são chamados de 
+                    dispositivos móveis no qual fazemos a instalação para conseguir consumir o conteúdo desejado.
+                </p>
+            
+            <h2> Etapa 3: O que são Servers?</h2>
+                <p>
+                    Um server é tudo que demanda arquivos. É uma máquina que distruibui arquivos Existem vários tipos de servidores tais como de arquivos, serurança, streaming, e-emails
+                    e web. Quando temos um conjunto de servidores damos o nome de Data Center. Tudo que envolve computação é feito de duas partes: hardware e Software. O primeiro 
+                    são as partes física, as peças, e o segundo é a parte lógica, os sistemas de operação e programas. 
+                </p>
+                <p>
+                    Quando uma requisição HTTP é requisitada na web, um servidor que responde. Os servidores podem ser tanto local como Web. Um servidor Proxy é um servidor que faz o bloqueio mediante algumas regras. O Firewall faz uma coisa análoga, entretanto fala sobre acessos externos.
+                    Quando você tem uma aplicação web que é interna, ou seja, é aplicada apenas para uma rede local, dizemos que a aplicação está na Intranet. Só é acessível para a rede local.
+                    DNS - Domain Name Service é um tipo de servidor que é direcional à um IP. É registrado pelo Domínio br. Hospedagem de site é disponibilizar um site para as pessoas acessarem podendo ser local ou não. HTTPS é segura ou seja é criptografada de ponta a ponta.
+                    FTP é uma conexão direta com o servidor para você transferir arquivos. File Transfer Protocol.
+                </p>
+            
+            <h2> Etapa 4: Linguagens de Programação</h2>
+                <p>
+                    Uma linguagem de progração é um ocnjunto de informaçoes que você insere que servem para comunicação direta com o computador. Atualmente, as linguagens que 
+                    estão sendo mais usadas no mundo são JavaScript, Python, Java, PHP e C#. As lingugagens rodam em diferentes tipos de lugares. Existem linguagens que rodam do 
+                    lado do servidor (Server-side) tipo: Python, PHP, C#... Já outras rodam do lado do cliente (Client-side) tais como JavaScript e CSS. Os desenvolvedores que 
+                    programam linguagens que rodam do lado do servidor são chamados de Back-Ends. Quando a linguagem roda do lado do Cliente chamamos de Front-End. 
+                </p>
+        <h1 id="html">Introdução ao HTML na Prática</h1>
+        <small><a href="#inicio">(Voltar ao sumário)</a></small>
+            <h2> O que é HTML e como funciona?</h2>
+                <p>
+                    Um aluno iniciante pode pensar que HTML é uma linguagem de programação. Entretanto, O acrônimo HTML vem do inglês Hyper Text Markup Language que em português seria
+                    Linguagem de marcação de texto. Assim, ela serve pra estrutrar textos. Ela é basiada em blocos tendo seus estilos predefinidos por 'tags'. Assim, por exemplo, para 
+                    começar a escrever um arquivo HTML precisamos por no documento a tag html. Da seguinte forma
+                </p>
+                <code>
+                    
+                </code>
+            
+            <h2> </h2>
+
+        <h1 id="git">Como Entregar seu Desafio de Projeto</h1>
+        <small><a href="#inicio">(Voltar ao sumário)</a></small>
+
+        <h1 id="desafio">Uma Página Web Utilizando as Tags Aprendidas</h1>
+        <small><a href="#inicio">(Voltar ao sumário)</a></small>
+
+        <h1 id="materiais">Materiais Complementares</h1>
+
+    </body>
+</html>
+
+<h1 id="intro"> Introdução</h1>
+<p>
+    Este arquivo serve como um resumo do curso <u><i>PRIMEIROS PASSOS COM HTML</i></u> da formação <strong><i>HTML DEVELOPER</i></strong>. 
+    É um curso introdutório, então tudo que será tratado aqui é no nível bem básico e didático. O sumário é feito de hyperlinks para que haja
+    uma pesquisa mais rápida e eficaz dentre o documento e cada seção representa a divisão de subcursos abordados no primeiro curso da formação.
+</p>
+
+
+<h1 id="client_server"> Entendendo Comunicação Client x Server</h1>
+<small><a href="#inicio">(Voltar ao sumário)</a></small>
+<p>
+    O curso Entendendo Comunicação ClientxServer é dividido em quatro etapas que servem para introduzir o aluno no mundo tecnológico.
+    É suposto aqui que o estudante não saiba muito sobre tecnologia. 
+
+</p>        
+<h2>Etapa 1: História da Web </h2>
+    <p>
+        Ao falarmos da história da web é totalmente aceitável que falemos primeiramente da história dos computadores. Afinal, esses são fundamentais
+        para que a web, como conhecemos hoje, fosse possível. Os primeiros computadores, diferentemente da nossa visão atual, eram máquinas gigantescas
+        que tinham como objetivo principal cálculos matemáticos usados para guerras tais como criptografia. Os primeiros computadores que existiram foram 
+        o Havard Mark I, Colossus e ENIAC no ano de 1946. A seguir temos três imagens, respectivas, deles.
+    </p>
+    
+    <img width="300" height="200" src="https://www.ibm.com/ibm/history/exhibits/markI/images/overlay/coi53.jpg"/>
+    <img width="300" height="200" src="https://cdn.britannica.com/15/25015-050-180E683B/computer-Colossus-Bletchley-Park-Buckinghamshire-England-Funding-1943.jpg"/>
+    <img width="300" height="200" src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/26776_1798DEE935286D54.jpg?w=876&h=484&crop=1"/>                
+
+    <p>
+        Assim, essa ficou  sendo a primeira geração de computadores. Computadores gigantescos feitos à base de bobinas e valvulas.
+        A segunda geração foi quando trocaram as válvulas por transistores. Isso permitia deixar o computador mais 'portátil'. Para aquela época
+        entenda como portátil conseguir transferir de uma sala para a outra. Como mostra a imagem abaixo    
+    </p>    
+    <img width="300" height="200" src="http://generalnote.com/Computer-Fundamental/Generation-of-Computer/Second-Generation-of-Computer.jpg"/>
+    <img width="300" height="200" src="http://joannaorlanda.weebly.com/uploads/3/9/8/6/39868131/7185210_orig.jpg"/>
+    <img width="300" height="200" src="https://static.javatpoint.com/computer/images/second-generation-of-computer2.jpg"/>
+
+    <p>
+        A terceira geração foi permitida mediante a criação dos circuitos integrados que permitiu deixar os computadores ainda menores. A partir dessa tecnologia
+        que foi possível ter os famosos PC's (Personal Computers) ou computadores pessoais.      
+    </p>
+    <img width="300" height="200" src="https://www.tutorialspoint.com/computer_fundamentals/images/third_generation.jpg"/>
+    <img width="300" height="200" src="http://generalnote.com/Computer-Fundamental/Generation-of-Computer/Third-Generation-of-Computer.jpg"/>
+    <img width="300" height="200" src="http://dilshodzaripov.weebly.com/uploads/9/6/1/0/9610277/1754830_orig.gif"/>
+    
+    <p>
+        Enfim, a quarta geração que é a que nós estamos vivendo agora está relacionada à circuitos cada vez menores e mais potêntes.
+    </p>
+    <img width="300" height="200" src="http://www.guyhowto.com/wp-content/uploads/2021/01/15_4-Fourth-Generation-of-C.jpg"/>
+    <img width="300" height="200" src="https://i0.wp.com/ricardohage.com.br/wp-content/uploads/2017/04/computadores_0006_desktop.jpg?resize=800%2C445"/>
+    <img width="300" height="200" src="https://img.freepik.com/fotos-gratis/mulher-de-negocio-que-trabalha-no-laptop_1388-67.jpg?w=2000"/>
+
+    <p>
+        A comunicação foi melhorando conforme o passar do tempo. Em 1958 por exemplo, foi passado um cabo de um continente para outro possibilitando a comunicação direta entre eles.
+        Obviamente, devido às guerras a forma de comunicação foram ficando cada vez mais eficazes para que se pudesse ter vantagem. 
+        Além disso, como formas de comunicação da época temos o telégrafo e o código Morse. 
+    </p>
+    <p>
+        A primeira palavra a trafegar pela internet foi a palavra 'LO'. A comunicação 
+        entre duas universidades foi feita e foi enviada a palavra 'LOGIN' de uma para a outra, mas a outra apenas recebeu 'LO'. 
+        Ou seja, a primeira conexão à internet e a primeira queda ocorram no mesmo dia.  
+        Para aprimorar isso foi criado o TCP/IP deixando as conexões mais estáveis e logo após foi criada a World Wide Web com intuito de não remediar problemas
+        de diversificação demasiada de redes.
+    </p>
+    <ol>
+        <li>
+            <a target="_blank" href="https://pt.wikipedia.org/wiki/Grace_Hopper"> Grace Murray Hopper </a> trabalhou na Marinha - Criou COBOL e o termo 'BUG'.
+        </li>
+        <li>
+            <a target="_blank" href="https://pt.wikipedia.org/wiki/Joseph_Carl_Robnett_Licklider" > Joseph Carl Robnett Licklider </a> - teorizou a idéia de Cloud.
+        </li>
+        <li>
+            <a target="_blank" href="https://pt.wikipedia.org/wiki/Robert_Kahn" > Robert E. Kahn </a> - criou TCP/IP e primeiro email.
+        </li>
+        <li>
+            <a target="_blank" href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee" > Tim Berners-Lee </a> -  considerado o pai da internet, criou o WWW, popularizou HTTP e HTML.
+        </li>
+        <li>
+            <a target="_blank" href="https://pt.wikipedia.org/wiki/Marc_Andreessen" > Marc Andreessen </a> - Reinventou os navegadores.
+        </li>
+        <li>
+            <a target="_blank" href="https://pt.wikipedia.org/wiki/Bill_Gates" > Bill Gates </a> - Fundador da Microsoft, criou o Internet Explorer.
+        </li>
+        <li>
+            <a target="_blank" href="https://pt.wikipedia.org/wiki/Steve_Jobs" > Steve Jobs </a> - Fundador da Apple, popularizou o smartphone.
+        </li>
+    </ol>
+<h2> Etapa 2: O que são Clients</h2>
+    <p>
+        Client é quem consume algo da internet. No momento que estamos utilizando a internet para obter alguma informação somos Clients. Para nos auxiliar nessa
+        missão de obter dados da internet existem os navegadores que servem para interpretar os programas no qual recebemos as informações. Quando solicitamos
+        alguma informação da Web sua resposta vem em HTML, CSS e JavaScript geralemente. O navegador traduz essas informações para que possamos ler o que desejamos.
+    </p>
+    <p>
+        Os Clients buscam informações de diferentes dispositivos. Quando se busca informação através de um navegaor ou  'Browser' estamos acessando uma Aplicação Web.
+        Ou seja, aplicação web é tudo aquilo que não precisa ser instalado no dispositivo Client. Diferentemente dos aplicativos de celular, por exemplo, que são chamados de 
+        dispositivos móveis no qual fazemos a instalação para conseguir consumir o conteúdo desejado.
+    </p>
+
+<h2> Etapa 3: O que são Servers?</h2>
+    <p>
+        Um server é tudo que demanda arquivos. É uma máquina que distruibui arquivos Existem vários tipos de servidores tais como de arquivos, serurança, streaming, e-emails
+        e web. Quando temos um conjunto de servidores damos o nome de Data Center. Tudo que envolve computação é feito de duas partes: hardware e Software. O primeiro 
+        são as partes física, as peças, e o segundo é a parte lógica, os sistemas de operação e programas. 
+    </p>
+    <p>
+        Quando uma requisição HTTP é requisitada na web, um servidor que responde. Os servidores podem ser tanto local como Web. Um servidor Proxy é um servidor que faz o bloqueio mediante algumas regras. O Firewall faz uma coisa análoga, entretanto fala sobre acessos externos.
+        Quando você tem uma aplicação web que é interna, ou seja, é aplicada apenas para uma rede local, dizemos que a aplicação está na Intranet. Só é acessível para a rede local.
+        DNS - Domain Name Service é um tipo de servidor que é direcional à um IP. É registrado pelo Domínio br. Hospedagem de site é disponibilizar um site para as pessoas acessarem podendo ser local ou não. HTTPS é segura ou seja é criptografada de ponta a ponta.
+        FTP é uma conexão direta com o servidor para você transferir arquivos. File Transfer Protocol.
+    </p>
+
+<h2> Etapa 4: Linguagens de Programação</h2>
+    <p>
+        Uma linguagem de progração é um ocnjunto de informaçoes que você insere que servem para comunicação direta com o computador. Atualmente, as linguagens que 
+        estão sendo mais usadas no mundo são JavaScript, Python, Java, PHP e C#. As lingugagens rodam em diferentes tipos de lugares. Existem linguagens que rodam do 
+        lado do servidor (Server-side) tipo: Python, PHP, C#... Já outras rodam do lado do cliente (Client-side) tais como JavaScript e CSS. Os desenvolvedores que 
+        programam linguagens que rodam do lado do servidor são chamados de Back-Ends. Quando a linguagem roda do lado do Cliente chamamos de Front-End. 
+    </p>
